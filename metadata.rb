@@ -1,0 +1,7 @@
+name             'haproxy_resource'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures haproxy_resource'
+long_description 'Installs/Configures haproxy_resource'
+version          '0.1.0'
