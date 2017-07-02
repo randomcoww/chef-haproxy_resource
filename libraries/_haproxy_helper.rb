@@ -58,8 +58,8 @@ module HaproxyHelper
     def parse_config_object(out, k, v, prefix)
       case v
       when Hash
+        out << [prefix, k].compact.join
         v.each do |e, f|
-          out << [prefix, k].compact.join
           parse_config_object(out, e, f, prefix + '  ')
         end
 
