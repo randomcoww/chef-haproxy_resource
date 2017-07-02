@@ -40,8 +40,10 @@ module HaproxyHelper
     #     'maxconn' => 2000
     #   },
     #   'backend mysql' => {
-    #     'mysql-ndb1' => '192.168.62.213:3306 check',
-    #     'mysql-ndb2' => '192.168.62.214:3306 check'
+    #     'server' => [
+    #       'mysql-ndb1 192.168.62.213:3306 check',
+    #       'mysql-ndb2 192.168.62.214:3306 check'
+    #     ]
     #   }
     # }
 
